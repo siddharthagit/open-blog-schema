@@ -1,0 +1,61 @@
+{
+  "uuid": 883,
+  "lid": 688,
+  "title": "ABCDEFGHIJKLMNOP",
+  "name": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+  "summary": "ABCDE",
+  "content": "ABCDE",
+  "image": [
+    {
+      "name": "ABCDEFGHIJKL",
+      "url": "ABCDEFGHIJKLMNOPQRSTUV",
+      "base64": "ABCD"
+    },
+    {},
+    275.5
+  ],
+  "paragraphs": [
+    {
+      "heading": "ABCDEFGHIJ",
+      "content": "ABCDEFGHIJKLMNOPQRSTUV",
+      "type": "video",
+      "order": 868
+    },
+    385.5,
+    383.5,
+    false
+  ],
+  "tags": [
+    {
+      "name": "ABCDEFG",
+      "url": "ABCDEFGHIJKLMNOPQRSTUV"
+    }
+  ],
+  "category": {
+    "name": "ABCDEFGHIJKLMNOPQ",
+    "id": 351
+  },
+  "author": {
+    "name": "ABCDEFG",
+    "uuid": "ABCDEFGHIJKLM",
+    "url": "ABCDEF"
+  },
+  "status": "active",
+  "meta": {
+    "lang": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+    "createdDate": "ABCDEFGH",
+    "lastupdatedDate": "ABCD"
+  },
+  "seometa": {
+    "title": "ABCDEFGHIJKLMNOPQ",
+    "descriptions": "ABCDEFGHIJKLMNO",
+    "copyright": "ABCDEFGHIJKLMN",
+    "keywords": [
+      {
+        "name": "ABCDEFGHIJKLMNOPQRSTUV"
+      },
+      null
+    ]
+  },
+  "url": 195
+}

@@ -1,0 +1,272 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://github.com/siddharthagit/openapi-blog-schema/blog_schema.json",
+  "description": "A representation of a Blog content in a webpage",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "integer",
+      "description": "Unique id of the blog"
+    },
+    "lid": {
+      "type": "integer",
+      "description": "Id of the blog in the current context"
+    },
+    "url": {
+      "type": "integer",
+      "description": "URL of the blog"
+    },
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "contentImages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "base64": {
+              "type": "string",
+              "contentEncoding": "base64"
+            }
+          },
+          "required": [
+            "name",
+            "url"
+          ]
+        }
+      ]
+    },
+    "paragraphs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "$ref": "#/definitions/paragraph"
+        }
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "url"
+          ]
+        }
+      ]
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ]
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "uuid": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "uuid",
+        "url"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "published",
+        "inactive",
+        "draft"
+      ]
+    },
+    "seometa": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "copyright": {
+          "type": "string"
+        },
+        "descriptions": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "descriptions"
+      ]
+    },
+    "ogmeta": {
+      "type": "object",
+      "properties": {
+        "og_image": {
+          "type": "string"
+        },
+        "og_title": {
+          "type": "string"
+        },
+        "og_description": {
+          "type": "string"
+        },
+        "twitter_image": {
+          "type": "string"
+        },
+        "twitter_title": {
+          "type": "string"
+        },
+        "twitter_description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "descriptions"
+      ]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "lang": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "updatedDate": {
+          "type": "string"
+        },
+        "publishedDate": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "publishedBy": {
+          "type": "string"
+        },
+        "pagination": {
+          "type": "object",
+          "properties": {
+            "page": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "required": [
+        "lang",
+        "createdDate",
+        "lastupdatedDate"
+      ]
+    }
+  },
+  "required": [
+    "uuid",
+    "lid",
+    "title",
+    "name",
+    "summary",
+    "content",
+    "image",
+    "paragraphs",
+    "tags",
+    "category",
+    "author",
+    "status",
+    "meta",
+    "seometa"
+  ],
+  "definitions": {
+    "paragraph": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "video",
+            "image",
+            "url",
+            "text",
+            "code"
+          ]
+        },
+        "subtype": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "heading"
+      ]
+    }
+  }
+}
