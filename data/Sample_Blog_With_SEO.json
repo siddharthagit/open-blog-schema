@@ -1,0 +1,92 @@
+{  
+  "uuid":"664",
+  "lid":"371",
+  "title":"Blog about Developer Checklist",
+  "name":"Blog about Developer Checklist",
+  "summary":"Blog about Developer Checklist for creating a new project",
+  "content":"Details about stuff that needs to be done before creating a new project",
+  "image":null,
+  "paragraphs":[  
+     {  
+        "heading":"Where to host the code",
+        "content":"Github ? Gitlab etc",
+        "type":"text",
+        "order":1
+     },
+     {  
+        "heading":"Identify the Stack",
+        "content":"Identify the Techstack for front end and backend",
+        "type":"text",
+        "order":2
+     },
+     {  
+        "heading":"Identify the Stack",
+        "content":"Identify the Techstack for front end and backend",
+        "type":"text",
+        "order":3
+     },
+     {  
+        "heading":"Define Code style ",
+        "content":"Define Code style ",
+        "type":"text",
+        "order":4
+     }
+  ],
+  "tags":[  
+     {  
+        "name":"Sofware Development",
+        "uuid":"softwaredevelopment"
+     },
+     {  
+        "name":"Howto",
+        "uuid":"howto"
+     }
+  ],
+  "category":{  
+     "name":"Development",
+     "uuid":"development"
+  },
+  "author":{  
+     "name":"Siddhartha",
+     "uuid":"@author@siddhartha"
+  },
+  "status":"draft",
+  "meta":{  
+     "lang":"Development checklist",
+     "createdDate":"11 March 2019",
+     "lastupdatedDate":"11 March 2019",
+     "updatedDate":"ABCDEFGHIJK",
+     "publishedDate":"ABCDEFGHIJKLMNO",
+     "createdBy":"@author@siddhartha",
+     "publishedBy":"@author@siddhartha",
+     "pagination":{  
+
+     }
+  },
+  "seo_meta":{  
+     "title":"Software Development Checklist",
+     "descriptions":"Software Development Checklist",
+     "copyright":"Siddhartha",
+     "keywords":[  
+        {  
+           "name":"Software, Development, Checklist"
+        }
+     ]
+  },
+  "url":"/",
+  "contentImages":[  
+     {  
+        "name":"Github Icon",
+        "url":"",
+        "base64":"ABCDEFGHIJKLMNOPQ"
+     }
+  ],
+  "og_meta":{  
+     "og_image":"Checklist",
+     "og_title":"Development Checklist",
+     "og_description":"Development Checklist",
+     "twitter_image":"Development Checklist Image",
+     "twitter_title":"Development Checklist Image",
+     "twitter_description":"Development Checklist Image"
+  }
+}

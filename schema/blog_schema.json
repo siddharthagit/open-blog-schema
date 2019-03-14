@@ -60,7 +60,7 @@
         }
       ]
     },
-    "task_lists": {
+    "ui_lists": {
       "type": "array",
       "items": [
         {
