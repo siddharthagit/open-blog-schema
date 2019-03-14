@@ -5,16 +5,16 @@
   "type": "object",
   "properties": {
     "uuid": {
-      "type": "integer",
-      "description": "Unique id of the blog"
+      "type": "string",
+      "description": "Unique id of the content"
     },
     "lid": {
-      "type": "integer",
-      "description": "Id of the blog in the current context"
+      "type": "string",
+      "description": "Id of the content in the current context"
     },
     "url": {
-      "type": "integer",
-      "description": "URL of the blog"
+      "type": "string",
+      "description": "URL of the content"
     },
     "title": {
       "type": "string"
@@ -46,8 +46,7 @@
             }
           },
           "required": [
-            "name",
-            "url"
+            "name"
           ]
         }
       ]
@@ -61,6 +60,14 @@
         }
       ]
     },
+    "task_lists": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/definitions/item_list"
+        }
+      ]
+    },
     "tags": {
       "type": "array",
       "items": [
@@ -70,13 +77,13 @@
             "name": {
               "type": "string"
             },
-            "url": {
+            "uuid": {
               "type": "string"
             }
           },
           "required": [
             "name",
-            "url"
+            "uuid"
           ]
         }
       ]
@@ -87,13 +94,13 @@
         "name": {
           "type": "string"
         },
-        "url": {
+        "uuid": {
           "type": "string"
         }
       },
       "required": [
         "name",
-        "url"
+        "uuid"
       ]
     },
     "author": {
@@ -105,14 +112,14 @@
         "uuid": {
           "type": "string"
         },
-        "url": {
+        "icon": {
           "type": "string"
         }
       },
       "required": [
         "name",
         "uuid",
-        "url"
+        "icon"
       ]
     },
     "status": {
@@ -120,10 +127,11 @@
       "enum": [
         "published",
         "inactive",
-        "draft"
+        "draft",
+        "deleted"
       ]
     },
-    "seometa": {
+    "seo_meta": {
       "type": "object",
       "properties": {
         "title": {
@@ -154,7 +162,7 @@
         "descriptions"
       ]
     },
-    "ogmeta": {
+    "og_meta": {
       "type": "object",
       "properties": {
         "og_image": {
@@ -177,8 +185,8 @@
         }
       },
       "required": [
-        "title",
-        "descriptions"
+        "og_title",
+        "og_description"
       ]
     },
     "meta": {
@@ -187,19 +195,19 @@
         "lang": {
           "type": "string"
         },
-        "createdDate": {
+        "createDate": {
           "type": "string"
         },
-        "updatedDate": {
+        "updateDate": {
           "type": "string"
         },
-        "publishedDate": {
+        "publishDate": {
           "type": "string"
         },
         "createdBy": {
           "type": "string"
         },
-        "publishedBy": {
+        "publishBy": {
           "type": "string"
         },
         "pagination": {
@@ -228,14 +236,13 @@
     "name",
     "summary",
     "content",
-    "image",
     "paragraphs",
     "tags",
     "category",
     "author",
     "status",
     "meta",
-    "seometa"
+    "seo_meta"
   ],
   "definitions": {
     "paragraph": {
@@ -268,5 +275,34 @@
         "heading"
       ]
     }
+    ,
+    "item_list": {
+      "type": "object",
+      "required" :["title", "items"],
+      "properties": {
+         "title":{
+          "type" : "string"
+        },
+         "items": {
+          "type": "array",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "heading", "content"
+          ]
+        }
+      }
+    }
   }
+  
+
 }
