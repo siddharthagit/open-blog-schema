@@ -9,3 +9,7 @@ https://jsonformatter.curiousconcept.com/
 
 Generate JSON from JSON Schema
 https://www.liquid-technologies.com/online-schema-to-json-converter
+
+
+TODO
+ADD Validation
