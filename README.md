@@ -13,3 +13,6 @@ https://www.liquid-technologies.com/online-schema-to-json-converter
 
 TODO
 ADD Validation
+
+TODO
+ADD Java Sample
