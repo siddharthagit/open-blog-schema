@@ -5,7 +5,7 @@
   "name":"Blog about Developer Checklist",
   "summary":"Blog about Developer Checklist for creating a new project",
   "content":"Details about stuff that needs to be done before creating a new project",
-  "image":null,
+  "mainImage":null,
   "paragraphs":[  
      {  
         "heading":"Where to host the code",

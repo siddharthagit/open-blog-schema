@@ -8,9 +8,17 @@
       "type": "string",
       "description": "Unique id of the content"
     },
+    "revid": {
+      "type": "string",
+      "description": "Revision Id of the document"
+    },
     "lid": {
       "type": "string",
       "description": "Id of the content in the current context"
+    },
+    "dna": {
+      "type": "object",
+      "$ref" : "#/definitions/objectDna"
     },
     "url": {
       "type": "string",
@@ -308,6 +316,20 @@
       },
       "required": [
         "name"
+      ]
+    },
+    "objectDna": {
+      "type": "object",
+      "properties": {
+        "objectType": {
+          "type": "string"
+        },
+        "objectVersion": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "objectType"
       ]
     }
   }
