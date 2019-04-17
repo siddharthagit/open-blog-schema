@@ -6,7 +6,7 @@
   "properties": {
     "uuid": {
       "type": "string",
-      "description": "Unique id of the content"
+      "description": "Unique Id of the content"
     },
     "revid": {
       "type": "string",
@@ -138,7 +138,7 @@
         "copyright": {
           "type": "string"
         },
-        "descriptions": {
+        "description": {
           "type": "string"
         },
         "keywords": {
